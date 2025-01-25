@@ -1,13 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Landing page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-primary:#00E5FE;
+        --color-secondary: #00748C;
+        --color-acent:#FFD700;
+        --color-whiteClr: #fff;
+        --color-dark: #000000;
+        --color-DarkCharcaol: #001519  ;
+        --color-grayClr: rgb(119, 119, 119);
+        /* ... */
+        --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
+        --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        /* ... */
+      }
+
+      
+      .manrope {
+  font-family: "Manrope", serif;
+  }
+    </style>
 </head>
 
-<body>
+<body class="manrope w-full">
+
+    <header class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="w-1/2">
+            <h2>It's good tea time at The Tea House</h2>
+            <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <div>
+                <button>Explore More</button>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <img src="images/banner.png" alt="banner img" width="100%">
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto flex flex-col gap-20">
+        <section class="w-full flex flex-col items-center gap-8">
+            <div class="w-3/4 text-center">
+                <h2 class="font-bold text-5xl">Our Featured Products</h2>
+                <p class="text-grayClr mt-3">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center gap-4">
+                <div class="flex flex-col gap-4 p-4 rounded-md bg-gradient-to-b from-gray-200 to-transparent">
+                    <div class="h-[200px]">
+                        <img class="h-full object-contain " src="images/tea-1.png" alt="tea" width="100%">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center text-center">
+                        <h3 class="font-bold text-2xl">Milk Tea</h3>
+                        <p class="text-grayClr">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-md bg-gradient-to-b from-gray-200 to-transparent ">
+                    <div class="h-[200px]">
+                        <img class="h-full object-contain" src="images/tea-3.png" alt="tea" width="100%">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center text-center">
+                        <h3 class="font-bold text-2xl">Milk Tea</h3>
+                        <p class="text-grayClr">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-md bg-gradient-to-b from-gray-200 to-transparent">
+                    <div class="h-[200px]">
+                        <img class="h-full object-contain" src="images/tea-2.png" alt="tea" width="100%">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center text-center">
+                        <h3 class="font-bold text-2xl">Milk Tea</h3>
+                        <p class="text-grayClr">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-md bg-gradient-to-b from-gray-200 to-transparent">
+                    <div class="h-[200px]">
+                        <img class="h-full object-contain" src="images/tea-4.png" alt="tea" width="100%" ">
+                    </div>
+                    <div class=" flex flex-col gap-2 items-center text-center">
+                        <h3 class="font-bold text-2xl">Milk Tea</h3>
+                        <p class="text-grayClr">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex gap-10 justify-between ">
+            <div class="w-1/2 grid grid-cols-2 grid-rows-3 gap-5">
+                <div class="bg-gradient-to-r from-red-200 to-transparent rounded-lg "></div>
+                <div class="bg-gradient-to-b from-orange-200 to-transparent rounded-lg row-span-2">
+                    <!-- <img class="h-full w-full object-contain" src="images/fresh-1.png" alt="" width="100%"> -->
+                </div>
+                <div class=" bg-gradient-to-b from-gray-200 to-transparent rounded-lg row-span-2">
+                    <!-- <img class="h-full w-full object-contain" src="images/fresh-2.png" alt="" width="100%"> -->
+                </div>
+                <div class="bg-gradient-to-r from-gray-200 to-transparent rounded-lg"></div>
+            </div>
+            <div class="flex flex-col gap-4 w-1/2 p-10">
+                <div>
+                    <h2 class="text-5xl font-bold">Great Tea, Freshly Presented</h2>
+                    <p class="text-grayClr mt-4">The meaning of gong cha is chanese is to provide the best tea to
+                        emperor
+                        from all possessions . It represents the highest quality and self expectation. Establishing in
+                        2006, Gong cha had been deeply appreciated by its custoers because of good words of mouth and
+                        unique customized service orginated from Taiwan.</p>
+                </div>
+                <div class="max-w-[80%]">
+                    <h3 class="text-xl font-bold">Unique Taste</h3>
+                    <p class="text-grayClr">A Unique and different style from other teapots gives a luxurious and
+                        minimalist impression</p>
+                </div>
+                <div class="max-w-[80%]">
+                    <h3 class="text-xl font-bold">Premium Quality</h3>
+                    <p class="text-grayClr">Premium Quality that makes tea more elegant and more durable when you use
+                        it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="flex items-center justify-between p-20 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg">
+            <div class="flex flex-col gap-5 w-1/2">
+                <h2 class="text-5xl font-bold leading-normal ">Meet Our Super <br> Clients</h2>
+                <p class="leading-relaxed">There are many variations of passages of Lorem Ipsum available, but the
+                    majority
+                    have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. </p>
+                <div class="bg-white w-fit font-bold rounded-lg">
+                    <button
+                        class=" cursor-pointer py-4 px-8 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Show
+                        All</button>
+                </div>
+            </div>
+            <div class="w-1/2 relative flex flex-col">
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center gap-10">
+            <div class="w-3/4 text-center">
+                <h2 class="text-5xl font-bold">News & Events</h2>
+                <p class="mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. </p>
+            </div>
+        </section>
+    </main>
 
 </body>
 
